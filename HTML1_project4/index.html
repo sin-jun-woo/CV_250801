@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HTML 문서의 시작을 나타냅니다. lang="en"은 이 페이지의 주 언어가 영어임을 의미해요. (한국어 콘텐츠이므로 "ko"로 바꾸는 것이 좋습니다.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문자 인코딩을 UTF-8로 설정하여 한글이 깨지지 않도록 합니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 모바일 기기 등 다양한 화면 크기에서 페이지가 잘 보이도록 설정합니다. -->
+    <title>Document</title>
+    <!-- 브라우저 탭에 표시될 페이지의 제목입니다. "한정판 운동화 응모"처럼 구체적으로 바꾸는 것이 좋습니다. -->
+  </head>
+  <body>
+    <!-- <form> 태그는 사용자 입력을 위한 양식을 정의합니다. -->
+    <!-- action="/backend_handler": 폼 데이터가 전송될 서버의 URL을 지정합니다. -->
+    <!-- method="post": 폼 데이터를 HTTP POST 방식으로 전송하도록 지정합니다. -->
+    <form action="/backend_handler" method="post">
+      <h1>한정판 운동화 응모</h1>
+      <!-- <h1> 태그는 페이지의 가장 중요한 최상위 제목을 나타냅니다. -->
+
+      <!-- <fieldset> 태그는 폼의 관련 요소들을 그룹화합니다. 테두리가 그려집니다. -->
+      <fieldset>
+        <!-- <legend> 태그는 <fieldset> 그룹의 제목을 나타냅니다. -->
+        <legend>응모 안내</legend>
+
+        <p>
+          한정판 응모 페이지 입니다. 아래 정보를 입력한 뒤 제출을 눌러주세요.
+          <!--   는 공백 문자입니다. CSS의 margin/padding으로 간격을 조절하는 것이 더 좋은 방법입니다. -->
+        </p>
+
+        <p>문의사항은 홈페이지 CS 센터에 남겨주세요.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>정보 입력</legend>
+
+        <h3>1. 이름</h3>
+        <!-- <h3>은 소제목이지만, 입력 필드의 제목이므로 <label> 태그를 사용하는 것이 더 좋습니다. -->
+        <input type="text" />
+        <!-- <input type="text">는 한 줄의 텍스트를 입력받는 필드입니다. (서버 전송을 위해 name 속성이 필요합니다.) -->
+        <h3>2. 전화번호</h3>
+
+        <p>전화번호는 '-' 제외한 숫자만 입력해 주세요.</p>
+        <input type="number" />
+        <!-- <input type="number">는 숫자만 입력받는 필드입니다. 전화번호는 type="tel"이 더 적합합니다. -->
+        <h3>3. 색깔 선택</h3>
+        <select>
+          <!-- <select> 태그는 드롭다운 목록을 만듭니다. (서버 전송을 위해 name 속성이 필요합니다.) -->
+          <optgroup label="색깔 종류">
+            <!-- <optgroup> 태그는 관련된 옵션들을 그룹으로 묶어줍니다. -->
+            <option value="01">black</option>
+            <!-- <option> 태그는 드롭다운 목록의 각 항목을 정의합니다. -->
+            <option value="02">green</option>
+            <!-- selected: 페이지 로드 시 이 항목이 기본으로 선택됩니다. -->
+            <option value="03" selected>white</option>
+          </optgroup>
+        </select>
+
+        <h3>4. 사연 어필</h3>
+
+        <p>재미있는 사연으로 당첨 확률을 높이세요!</p>
+        <textarea rows="5"></textarea>
+        <!-- <textarea> 태그는 여러 줄의 텍스트를 입력할 수 있는 필드입니다. (서버 전송을 위해 name 속성이 필요합니다.) -->
+      </fieldset>
+      <br />
+      <!-- <br> 태그는 줄바꿈을 합니다. CSS로 여백을 조절하는 것이 좋습니다. -->
+      <button type="submit">제출하기</button>
+      <!-- <button type="submit">은 폼에 입력된 모든 데이터를 action에 지정된 서버로 전송하는 제출 버튼입니다. -->
+      <button type="reset">초기화</button>
+      <!-- <button type="reset">은 폼에 입력된 모든 내용을 초기 상태로 되돌리는 버튼입니다. -->
+    </form>
+  </body>
+</html>

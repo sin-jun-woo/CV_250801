@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HTML 문서의 시작을 나타냅니다. lang="en"은 이 페이지의 주 언어가 영어임을 의미해요. (한국어 콘텐츠이므로 "ko"로 바꾸는 것이 좋습니다.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문자 인코딩을 UTF-8로 설정하여 한글이 깨지지 않도록 합니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 모바일 기기 등 다양한 화면 크기에서 페이지가 잘 보이도록 설정합니다. -->
+    <title>포상휴가 여행지 선택하기</title>
+    <!-- 브라우저 탭에 표시될 페이지의 제목을 설정합니다. -->
+  </head>
+  <body>
+    <!-- 웹사이트에 실제로 보이는 모든 콘텐츠를 담는 부분입니다. -->
+
+    <!-- <form> 태그는 사용자로부터 입력을 받기 위한 양식을 정의합니다. -->
+    <!-- action="/backend": 폼 데이터가 전송될 서버의 URL을 지정합니다. -->
+    <!-- method="post": 폼 데이터를 HTTP POST 방식으로 전송하도록 지정합니다. -->
+    <form action="/backend" method="post">
+      <!-- <label> 태그는 입력 필드(input)의 제목을 나타냅니다. for 속성으로 id를 연결하면 라벨을 클릭해도 해당 입력 필드가 활성화됩니다. -->
+      <label for="country">여행 나라 선택</label>
+
+      <!-- <select> 태그는 드롭다운 목록을 만듭니다. -->
+      <select id="country">
+        <!-- <option> 태그는 드롭다운 목록의 각 항목을 정의합니다. -->
+        <!-- selected: 페이지 로드 시 이 항목이 기본으로 선택됩니다. -->
+        <!-- disabled: 이 항목은 선택할 수 없도록 비활성화됩니다. (주로 안내 문구로 사용) -->
+        <option selected disabled>선택해주세요</option>
+
+        <!-- <optgroup> 태그는 관련된 옵션들을 그룹으로 묶어줍니다. -->
+        <!-- label="Asia": 그룹의 제목을 지정합니다. -->
+        <optgroup label="Asia">
+          <option>일본</option>
+          <option>중국</option>
+          <option>베트남</option>
+          <option>태국</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option>영국</option>
+          <option>프랑스</option>
+          <option>독일</option>
+          <option>이탈리아</option>
+        </optgroup>
+      </select>
+
+      <hr />
+      <!-- <hr> 태그는 주제의 분리를 나타내는 수평선을 긋습니다. -->
+
+      <label for="기타의견">기타의견</label>
+      <!-- <textarea> 태그는 여러 줄의 텍스트를 입력할 수 있는 필드를 만듭니다. -->
+      <!-- cols="30": 입력 필드의 너비를 글자 수 기준으로 대략 30자로 지정합니다. -->
+      <textarea id="기타의견" cols="30"></textarea>
+    </form>
+  </body>
+</html>

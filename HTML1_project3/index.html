@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HTML 문서의 시작을 나타냅니다. lang="en"은 이 페이지의 주 언어가 영어임을 의미해요. (한국어 콘텐츠이므로 "ko"로 바꾸는 것이 좋습니다.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문자 인코딩을 UTF-8로 설정하여 한글이 깨지지 않도록 합니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 모바일 기기 등 다양한 화면 크기에서 페이지가 잘 보이도록 설정합니다. -->
+    <title>Document</title>
+    <!-- 브라우저 탭에 표시될 페이지의 제목입니다. "시우의 코딩이 잘되는 카페"처럼 구체적으로 바꾸는 것이 좋습니다. -->
+    <style>
+      /* <style> 태그 안에는 이 HTML 문서에만 적용될 CSS 코드를 작성합니다. */
+      table {
+        border-collapse: collapse; /* 표의 테두리를 한 줄로 합쳐줍니다. */
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black; /* table, th, td 태그에 1픽셀 두께의 검은색 실선 테두리를 적용합니다. */
+        padding: 5px; /* 셀 안쪽에 5픽셀의 여백을 줍니다. */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 웹사이트에 실제로 보이는 모든 콘텐츠를 담는 부분입니다. -->
+    <table>
+      <!-- <table> 태그는 표(table)를 만듭니다. -->
+      <caption>
+        시우의 코딩이 잘되는 카페
+      </caption>
+      <!-- <caption> 태그는 표의 제목을 나타냅니다. -->
+      <thead>
+        <!-- <thead> 태그는 표의 머리말(header) 그룹을 정의합니다. -->
+        <tr>
+          <!-- <tr> 태그는 표의 한 행(table row)을 나타냅니다. -->
+          <td>메뉴</td>
+          <!-- <td> 태그는 표의 일반 데이터 셀(table data)을 나타냅니다. 제목 셀이므로 <th>로 쓰는 것이 더 좋습니다. -->
+          <td>가격</td>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tbody> 태그는 표의 본문(body) 그룹을 정의합니다. -->
+        <tr>
+          <td>아메리카노</td>
+          <td>1,500원</td>
+        </tr>
+        <tr>
+          <td>라떼</td>
+          <td>3,000원</td>
+        </tr>
+        <tr>
+          <td>율무차</td>
+          <td>4,000원</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- <tfoot> 태그는 표의 꼬리말(footer) 그룹을 정의합니다. -->
+        <tr>
+          <td>음료 많이 드시고 좋은 코드 짜세요!</td>
+          <!-- 이 셀은 2개의 열에 걸쳐 표시되어야 하므로, colspan="2" 속성을 추가하는 것이 좋습니다. -->
+        </tr>
+      </tfoot>
+    </table>
+    <ul>
+      <!-- <ul> 태그는 순서가 없는 목록(Unordered List)을 만듭니다. -->
+      <li>대표자: 시우</li>
+      <!-- <li> 태그는 목록의 각 항목(List Item)을 나타냅니다. -->
+      <li>상호명: 개발자들을 위한 카페</li>
+      <li>전화번호: 02-1234-5678</li>
+    </ul>
+  </body>
+</html>

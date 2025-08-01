@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 이 문서가 HTML5 표준에 따라 작성되었음을 선언합니다. -->
+<html lang="en">
+  <!-- HTML 문서의 시작을 나타냅니다. lang="en"은 이 페이지의 주 언어가 영어임을 의미해요. (한국어 콘텐츠이므로 "ko"로 바꾸는 것이 좋습니다.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문자 인코딩을 UTF-8로 설정하여 한글이 깨지지 않도록 합니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 모바일 기기 등 다양한 화면 크기에서 페이지가 잘 보이도록 설정합니다. (반응형 웹 디자인의 기초) -->
+    <title>Document</title>
+    <!-- 브라우저 탭에 표시될 페이지의 제목입니다. "지수의 플레이리스트"처럼 구체적으로 바꾸는 것이 좋습니다. -->
+  </head>
+
+  <body>
+    <!-- 웹사이트에 실제로 보이는 모든 콘텐츠를 담는 부분입니다. -->
+    <h1>지수의 플리 만들기</h1>
+    <!-- <h1> 태그는 페이지에서 가장 중요한 최상위 제목을 나타냅니다. -->
+
+    <p>in the forest2 - Lesfm</p>
+    <!-- <p> 태그는 문단을 나타냅니다. 여기서는 오디오 파일의 제목으로 사용되었습니다. -->
+
+    <audio controls loop>
+      <!-- <audio> 태그는 오디오 콘텐츠를 삽입합니다. -->
+      <!-- controls: 재생, 정지, 볼륨 조절 등 컨트롤러를 표시합니다. -->
+      <!-- loop: 오디오 재생이 끝나면 자동으로 다시 시작하도록 설정합니다. -->
+      <source
+        src="https://storage.googleapis.com/codingvalley/src/HTML_10_in_the_forest2.mp3"
+        type="audio/mpeg"
+      />
+      <!-- <source> 태그는 여러 다른 형식의 오디오 파일을 지정할 때 사용합니다. 브라우저가 지원하는 첫 번째 파일을 재생합니다. -->
+      <!-- src: 오디오 파일의 경로(URL)를 지정합니다. -->
+      <!-- type: 오디오 파일의 미디어 타입(MIME type)을 명시합니다. 'audio/mpeg'는 MP3 파일을 의미합니다. -->
+    </audio>
+
+    <p>town - BeCorbal</p>
+    <audio controls muted>
+      <!-- muted: 페이지가 로드될 때 오디오가 음소거 상태로 시작되도록 설정합니다. -->
+      <source
+        src="https://storage.googleapis.com/codingvalley/src/HTML_10_town.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </body>
+</html>

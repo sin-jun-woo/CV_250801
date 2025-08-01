@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- 이 문서를 HTML5 문서로 선언합니다. -->
+<html lang="en">
+  <!-- HTML 페이지의 최상위 요소입니다. lang="en"은 주 언어가 영어임을 명시합니다. (한국어 콘텐츠이므로 "ko"로 바꾸는 것이 좋습니다.) -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문자 인코딩을 UTF-8로 설정하여 한글을 포함한 모든 문자를 올바르게 표시합니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 뷰포트 너비를 기기 너비에 맞춰 페이지가 모든 기기에서 잘 보이도록 합니다. -->
+    <title>Document</title>
+    <!-- 페이지의 제목을 설정하며, 브라우저 탭에 표시됩니다. ("NAVER"처럼 더 구체적으로 작성하는 것이 좋습니다.) -->
+    <link
+      rel="stylesheet"
+      href="https://storage.googleapis.com/codingvalley/src/HTML_p5_style.css"
+    />
+    <!-- 외부 CSS 파일을 연결하여 페이지 스타일을 지정합니다. -->
+  </head>
+  <body>
+    <!-- 웹페이지의 모든 보이는 콘텐츠를 포함합니다. -->
+    <header>
+      <!-- 페이지의 소개 콘텐츠나 네비게이션 링크 그룹을 나타냅니다. -->
+      <h1>NAVER</h1>
+      <!-- 페이지의 메인 제목입니다. -->
+    </header>
+
+    <nav>
+      <!-- 다른 페이지나 페이지 내의 다른 부분으로 연결되는 네비게이션 메뉴 섹션을 나타냅니다. -->
+      <ul>
+        <!-- 순서 없는 목록입니다. -->
+        <li><a href="/mail">메일</a></li>
+        <!-- 하이퍼링크(<a> 태그)를 포함하는 목록 항목입니다. -->
+        <li><a href="/cafe">카페</a></li>
+        <li><a href="/blog">블로그</a></li>
+        <li><a href="/kin">지식in</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- 문서의 핵심적인 주요 콘텐츠를 명시합니다. -->
+      <article>
+        <!-- 포럼 게시물, 잡지/신문 기사, 블로그 글 등 독립적으로 구성된 콘텐츠를 나타냅니다. -->
+        <section>
+          <!-- 독립적인 콘텐츠 섹션을 나타냅니다. -->
+          <h3>광고</h3>
+          <!-- 3번째 수준의 제목입니다. -->
+          <div>
+            <!-- 콘텐츠를 담는 일반적인 컨테이너입니다. -->
+            <span>주제별로 분류된 다양한 광고 모음</span>
+            <!-- 텍스트의 일부를 감싸는 인라인 컨테이너입니다. -->
+          </div>
+        </section>
+
+        <section>
+          <h3>구독한 언론사</h3>
+          <!-- 'border'와 'width' 속성은 오래된 방식입니다. 테이블 스타일은 CSS로 지정하는 것이 좋습니다. -->
+          <table border="1" width="90%">
+            <!-- 테이블을 생성합니다. -->
+            <tr>
+              <!-- 테이블의 행(row)입니다. -->
+              <td>ABC</td>
+              <!-- 테이블의 데이터 셀(cell)입니다. -->
+              <td>CNN</td>
+              <td>조선일보</td>
+              <td>한겨례신문</td>
+            </tr>
+            <tr>
+              <td>Washington Post</td>
+              <td>Forbes</td>
+              <td>아시아경제</td>
+              <td>매일경제</td>
+            </tr>
+            <tr>
+              <td>Washington Post</td>
+              <td>Forbes</td>
+              <td>아시아경제</td>
+              <td>매일경제</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h3>오늘 읽을만한 글</h3>
+          <div>
+            <span>주제별로 분류된 다양한 글 모음</span>
+          </div>
+        </section>
+      </article>
+
+      <aside>
+        <!-- 주요 콘텐츠와 간접적으로 관련된 콘텐츠 섹션을 나타냅니다. 주로 사이드바에 사용됩니다. -->
+        <h3>회원정보</h3>
+        <p>ID: sia</p>
+        <ul>
+          <!-- 이 목록 항목들은 클릭 가능하게 하려면 하이퍼링크(<a>)여야 합니다. -->
+          <li>블로그</li>
+          <li>쇼핑</li>
+          <li>포스트</li>
+          <li>네이버페이</li>
+        </ul>
+        <div class="ad">
+          <p>[광고]</p>
+          <p>[광고]</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <!-- 가장 가까운 섹션 콘텐츠나 전체 페이지의 꼬리말을 나타냅니다. -->
+      <p>
+        회사소개 | 인재채용 | 제휴 | 제안 | 이용약관 | 개인정보처리방침 |
+        청소년보호정책 | 네이버 정책 | 고객센터 | ⓒ NAVER Corp.
+      </p>
+    </footer>
+  </body>
+</html>
